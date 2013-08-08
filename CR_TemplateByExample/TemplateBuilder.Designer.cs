@@ -42,6 +42,7 @@
             this.cmdOk = new System.Windows.Forms.Button();
             this.lblHelp1 = new System.Windows.Forms.Label();
             this.cmdHelp = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.TabControl1.SuspendLayout();
             this.TabPage1.SuspendLayout();
             this.TabPage2.SuspendLayout();
@@ -81,8 +82,8 @@
             this.lblHelp3.Name = "lblHelp3";
             this.lblHelp3.Size = new System.Drawing.Size(219, 125);
             this.lblHelp3.TabIndex = 25;
-            this.lblHelp3.Text = "Preview\r\n\r\nDefinition:\r\nCalculated from BaseText and Fields\r\n\r\nExample:\r\nThe «Fie" +
-    "ld(Quick)» «Field(Brown)» Fox";
+            this.lblHelp3.Text = "Preview\r\n\r\nDefinition:\r\nCalculated from BaseText and Substitutions\r\n\r\nExample:\r\nT" +
+    "he «Field(Quick)» «Field(Brown)» Fox";
             // 
             // lblHelp2
             // 
@@ -157,11 +158,11 @@
             // 
             this.txtFields.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtFields.Location = new System.Drawing.Point(16, 12);
+            this.txtFields.Location = new System.Drawing.Point(16, 25);
             this.txtFields.Multiline = true;
             this.txtFields.Name = "txtFields";
             this.txtFields.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtFields.Size = new System.Drawing.Size(565, 147);
+            this.txtFields.Size = new System.Drawing.Size(565, 134);
             this.txtFields.TabIndex = 16;
             // 
             // cmdCancel
@@ -187,12 +188,12 @@
             // lblHelp1
             // 
             this.lblHelp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblHelp1.Location = new System.Drawing.Point(337, 21);
+            this.lblHelp1.Location = new System.Drawing.Point(337, 33);
             this.lblHelp1.Name = "lblHelp1";
-            this.lblHelp1.Size = new System.Drawing.Size(219, 128);
+            this.lblHelp1.Size = new System.Drawing.Size(219, 116);
             this.lblHelp1.TabIndex = 23;
-            this.lblHelp1.Text = "Fields:\r\n\r\nDefinition:\r\n A Newline separated list of strings.\r\n\r\nExample:\r\nQuick\r" +
-    "\nBrown\r\n";
+            this.lblHelp1.Text = "Substitutions:\r\n\r\nDefinition:\r\n A Newline separated list of strings.\r\n\r\nExample:\r" +
+    "\nQuick\r\nBrown\r\n";
             // 
             // cmdHelp
             // 
@@ -204,11 +205,21 @@
             this.cmdHelp.UseVisualStyleBackColor = true;
             this.cmdHelp.Click += new System.EventHandler(this.cmdHelp_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Substitutions";
+            // 
             // TemplateBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 399);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmdHelp);
             this.Controls.Add(this.lblHelp1);
             this.Controls.Add(this.TabControl1);
@@ -216,7 +227,7 @@
             this.Controls.Add(this.cmdCancel);
             this.Controls.Add(this.cmdOk);
             this.Name = "TemplateBuilder";
-            this.Text = "TemplateBuilder";
+            this.Text = "Substitutions";
             this.TabControl1.ResumeLayout(false);
             this.TabPage1.ResumeLayout(false);
             this.TabPage1.PerformLayout();
@@ -244,6 +255,7 @@
         private DevExpress.CodeRush.UserControls.ContextPicker ContextPicker1;
         private System.Windows.Forms.Label lblHelp1;
         private System.Windows.Forms.Button cmdHelp;
+        private System.Windows.Forms.Label label1;
 
     }
 }
