@@ -88,7 +88,7 @@
             // lblHelp2
             // 
             this.lblHelp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblHelp2.Location = new System.Drawing.Point(19, 13);
+            this.lblHelp2.Location = new System.Drawing.Point(10, 13);
             this.lblHelp2.Name = "lblHelp2";
             this.lblHelp2.Size = new System.Drawing.Size(199, 125);
             this.lblHelp2.TabIndex = 24;
@@ -156,8 +156,8 @@
             // 
             // txtFields
             // 
-            this.txtFields.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtFields.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFields.Location = new System.Drawing.Point(16, 25);
             this.txtFields.Multiline = true;
             this.txtFields.Name = "txtFields";
@@ -168,7 +168,7 @@
             // cmdCancel
             // 
             this.cmdCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdCancel.Location = new System.Drawing.Point(510, 366);
+            this.cmdCancel.Location = new System.Drawing.Point(510, 368);
             this.cmdCancel.Name = "cmdCancel";
             this.cmdCancel.Size = new System.Drawing.Size(75, 23);
             this.cmdCancel.TabIndex = 18;
@@ -178,7 +178,7 @@
             // cmdOk
             // 
             this.cmdOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdOk.Location = new System.Drawing.Point(430, 366);
+            this.cmdOk.Location = new System.Drawing.Point(429, 368);
             this.cmdOk.Name = "cmdOk";
             this.cmdOk.Size = new System.Drawing.Size(75, 23);
             this.cmdOk.TabIndex = 17;
@@ -188,20 +188,23 @@
             // lblHelp1
             // 
             this.lblHelp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblHelp1.Location = new System.Drawing.Point(337, 33);
+            this.lblHelp1.Location = new System.Drawing.Point(26, 33);
             this.lblHelp1.Name = "lblHelp1";
-            this.lblHelp1.Size = new System.Drawing.Size(219, 116);
+            this.lblHelp1.Size = new System.Drawing.Size(530, 116);
             this.lblHelp1.TabIndex = 23;
-            this.lblHelp1.Text = "Substitutions:\r\n\r\nDefinition:\r\n A Newline separated list of strings.\r\n\r\nExample:\r" +
-    "\nQuick\r\nBrown\r\n";
+            this.lblHelp1.Text = "Substitutions:\r\n\r\nDefinition:\r\n A Newline separated list of strings used to infer" +
+    " the location of fields and links within the final template.\r\n\r\nExample:\r\nQuick\r" +
+    "\nBrown\r\n";
             // 
             // cmdHelp
             // 
+            this.cmdHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cmdHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdHelp.Location = new System.Drawing.Point(12, 368);
             this.cmdHelp.Name = "cmdHelp";
-            this.cmdHelp.Size = new System.Drawing.Size(75, 23);
+            this.cmdHelp.Size = new System.Drawing.Size(116, 23);
             this.cmdHelp.TabIndex = 24;
-            this.cmdHelp.Text = "?";
+            this.cmdHelp.Text = "Toggle Help";
             this.cmdHelp.UseVisualStyleBackColor = true;
             this.cmdHelp.Click += new System.EventHandler(this.cmdHelp_Click);
             // 
