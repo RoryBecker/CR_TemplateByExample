@@ -3,7 +3,7 @@ CR_TemplateByExample
 
 CodeRush plugin designed to help create simple templates.
 
-Initial version includes 2 additional commands: CreateTempTemplate and ExecuteTempTemplaste.
+Initial version includes 2 additional commands: CreateTempTemplate and ExecuteTempTemplate.
 
 (For information on binding these and other commands to shortcuts, see http://community.devexpress.com/blogs/rorybecker/archive/2010/10/05/binding-keys-in-coderush.aspx)
 
